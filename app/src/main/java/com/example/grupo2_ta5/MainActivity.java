@@ -4,6 +4,8 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.widget.Button;
+
 import com.google.firebase.auth.AuthCredential;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
@@ -13,6 +15,10 @@ import com.google.firebase.auth.GoogleAuthProvider;
 import java.util.HashMap;
 
 public class MainActivity extends AppCompatActivity {
+    static final int GOOGLE_SIGN_IN = 123;
+    FirebaseAuth mAuth;
+    //GoogleSignInClient mGoogleSignInClient;
+    Button btn_login;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
